@@ -4,14 +4,100 @@
         <title>Survey Form</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <head>
-
-        </head>
+        <header>
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Thank you for taking 
+                the time to fill out this survey
+            </p>
+        </header>
         <main>
-            <form>
-                
+            <form id="survey-form">
+                <!-- name -->
+                <div class="question">
+                    <label id="name-label" class="question-label">Enter Name: </label>
+                    <input required class="block-input" id="name" 
+                        name="name" type="text" placeholder="John Smith">
+                </div>
+
+                <!-- email -->
+                <div class="question">
+                    <label id="email-label" class="question-label">Enter Email: </label>
+                    <input required class="block-input" id="email" 
+                        name="email" type="email" placeholder="example@gmail.com">
+                </div>
+
+                <!-- age -->
+                <div class="question">
+                    <label id="number-label" class="question-label">Enter Your Age: </label>
+                    <input class="block-input" id="number" type="number" min="18"
+                    max="110" placeholder="18" name="number" required>
+                </div>   
+
+                <!-- fav color -->
+                <div class="question">
+                    <label id="dropdown" class="question-label">Select Your Favorite Color: </label>
+                    <select class="block-input" name="colors" id="colors" required>
+                        <option disabled selected>Pick a Color</option>
+                        <option value="Red">Red</option>
+                        <option value="Orange">Orange</option>
+                        <option value="Yellow">Yellow</option>
+                        <option value="Green">Green</option>
+                        <option value="Blue">Blue</option>
+                        <option value="Indigo">Indigo</option>
+                        <option value="Violet">Violet</option>
+                    </select>
+                </div>
+            
+                <!-- gender -->
+                <div class="question">
+                    <label id="gender-label" class="question-label">
+                        What is Your Gender? </label>
+                    <div class="gender-option choice-margin">
+                        <input type="radio" id="male" value="male" name="gender" required>
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="gender-option">
+                        <input type="radio" name="gender" id="female" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                    <div class="gender-option">
+                        <input type="radio" name="gender" id="non-binary" value="non-binary">
+                        <label for="non-binary">Non-Binary</label>
+                    </div>
+                    <div class="gender-option">
+                        <input type="radio" name="gender" id="other" value="other">
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+
+                <!-- pets -->
+                <div class="question">
+                    <label id="pets-label" class="question-label">
+                        What kind of pet(s) do you have? </label>
+                        <div class="pet-option choice-margin">
+                        <input type="checkbox" name="pets" id="dog" value="dog">
+                    <label for="dog">Dog</label>
+                    </div>
+                    <div class="pet-option">
+                        <input type="checkbox" name="pets" value="cat" id="cat">
+                        <label for="cat">Cat</label>
+                    </div>
+                    <div class="pet-option">
+                        <input type="checkbox" name="pets" value="other" id="other">
+                        <label for="otehr">Other</label>
+                    </div>
+                </div>
+
+                <!-- additional comments -->
+                <div class="question">
+                <label for="comments" class="question-label">Any additional comments?</label>
+                <textarea class="block-input" id="comments" name="comments"></textarea>
+                </div>
+
+                <button id="submit">Submit</button>
             </form>
         </main>
     </body>

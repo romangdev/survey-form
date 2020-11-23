@@ -1,0 +1,101 @@
+html {
+    height: 100%;
+    background: url(https://cdn.wallpapersafari.com/84/99/D3e06I.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+body {
+    margin-top: 4%;
+    padding-bottom: 4%;
+}
+
+header {
+    text-align: center;
+}
+
+#title {
+    font-size: 35px;
+}
+
+#description {
+    font-size: 20px;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+form {
+    margin: 30px 20% 0px 20%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-top: 3%;
+    padding-bottom: 3%;
+    color: white;
+    border-radius: 10px;
+}
+
+.question {
+    margin-bottom: 25px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;;
+}
+
+.question-label {
+    font-size: 120%;
+}
+
+.block-input {
+    display: block;
+}
+
+#name {
+    width: 95%;
+    margin-top: 15px;
+}
+
+#email {
+    width: 95%; 
+    margin-top: 15px;   
+}
+
+#number {
+    width: 95%;  
+    margin-top: 15px;  
+}
+
+#colors {
+    width: 95%;  
+    margin-top: 15px;  
+}
+
+textarea {
+    width: 95%;   
+    margin-top: 15px; 
+}
+
+.choice-margin {
+    margin-top: 15px;
+}
+
+button {
+    color: white;
+    background-color: #00b831;
+    border: none; 
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 100%;
+    letter-spacing: 2px;
+    border-radius: 10px;
+}
+
+button:hover {
+    width: 75%;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    font-size: 105%;
+    background-color: #00d138;
+}
